@@ -10,6 +10,8 @@
   --radius: 14px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 html { scroll-behavior: smooth; }
@@ -54,7 +56,10 @@ body {
   padding: 8rem 5vw 4rem;
   background:
     radial-gradient(600px 300px at 20% 20%, rgba(110,231,183,.08), transparent),
-    radial-gradient(700px 350px at 80% 70%, rgba(122,162,255,.08), transparent);
+    radial-gradient(700px 350px at 80% 70%, rgba(122,162,255,.08), transparent),
+    linear-gradient(rgba(110,231,183,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(110,231,183,.04) 1px, transparent 1px);
+  background-size: auto, auto, 28px 28px, 28px 28px;
 }
 .hero__greeting { color: var(--muted); font-size: 1.1rem; }
 .hero__name {
@@ -176,3 +181,26 @@ body {
   .nav__toggle { display: block; }
   .timeline li { grid-template-columns: 1fr; gap: .3rem; }
 }
+
+/* ---------- Pixel accents (subtle minecraft vibe) ---------- */
+.px {
+  font-family: "Press Start 2P", monospace;
+  font-size: 1.4rem;
+  color: var(--accent);
+  text-shadow: 3px 3px 0 rgba(0,0,0,.35);
+}
+.px--sm { font-size: .85rem; margin-right: .6rem; vertical-align: middle; }
+
+/* blocky corner accents on cards — like crafted blocks */
+.card { position: relative; }
+.card::before {
+  content: ""; position: absolute; top: 0; left: 0;
+  width: 14px; height: 14px;
+  border-top: 3px solid var(--accent); border-left: 3px solid var(--accent);
+  border-radius: var(--radius) 0 0 0;
+  opacity: .7;
+}
+.card--featured::before {
+  border-top-color: var(--accent-2); border-left-color: var(--accent-2);
+}
+
