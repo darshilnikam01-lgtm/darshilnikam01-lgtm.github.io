@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Darshil Nikam — Builder & Problem Solver</title>
+  <title>Darshil Nikam</title>
   <meta name="description" content="Darshil Nikam — B.Tech CSE student building AI tools, web apps, and structural engineering software." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <nav class="nav">
-    <a class="nav__logo" href="#top"><span class="px">DN</span></a>
+    <a class="nav__logo" href="#top">darshilnikam</a>
     <div class="nav__links">
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
@@ -22,18 +22,16 @@
   </nav>
 
   <header class="hero" id="top">
-    <p class="hero__greeting">Hi, I'm</p>
-    <h1 class="hero__name">Darshil Nikam</h1>
-    <h2 class="hero__role">
-      <span id="typed"></span><span class="caret">|</span>
-    </h2>
+    <p class="hero__greeting">Hi, I'm Darshil Nikam</p>
+    <h1 class="hero__name">Builder &amp; Problem Solver</h1>
+    <p class="hero__role" id="typed"></p>
     <p class="hero__sub">
-      B.Tech CSE student crafting AI-powered tools, web apps, and
-      structural-engineering software.
+      B.Tech CSE undergrad. I turn messy problems — legal documents, bridge
+      design reports, genetics questions — into clean, working products.
     </p>
     <div class="hero__cta">
-      <a class="btn btn--primary" href="#projects">View Projects</a>
-      <a class="btn btn--ghost" href="#contact">Get in Touch</a>
+      <a class="btn" href="#projects">Projects</a>
+      <a class="btn btn--ghost" href="#contact">Contact</a>
     </div>
     <div class="hero__socials">
       <a href="https://github.com/darshilnikam01-lgtm" target="_blank" rel="noopener">GitHub</a>
@@ -47,43 +45,38 @@
 
   <main>
     <section class="section" id="about">
-      <h2 class="section__title"><span class="px px--sm">§</span> About Me</h2>
+      <h2 class="section__title">About</h2>
       <div class="about">
         <p>
-          I'm a Computer Science undergrad passionate about competitive
-          programming, machine learning, and building things that solve real
-          problems. I like taking a messy problem — a legal document, a bridge
-          design report, a genetics question — and turning it into a clean,
-          working product.
+          Computer Science undergraduate passionate about competitive
+          programming, machine learning, and systems. Currently building a
+          foundation in ML and full-stack development, with a strong interest
+          in structural engineering software.
         </p>
         <p>
-          Recently I contributed a full refactor of the LaTeX report generator
-          in OsdagBridge (FOSSEE/IIT Bombay ecosystem): centralized styling,
-          longtable migration, and programmatic charts — all verified by
-          diffing generated PDFs.
+          Recently refactored the LaTeX report generator in OsdagBridge —
+          centralized styling, longtable migration, and programmatic charts —
+          verified end-to-end by diffing generated PDFs.
         </p>
-        <div class="stats">
-          <div class="stat"><span class="stat__num">1200+</span><span class="stat__label">Codeforces rating</span></div>
-          <div class="stat"><span class="stat__num">IOQM</span><span class="stat__label">Qualified '22 & '23</span></div>
-          <div class="stat"><span class="stat__num">2nd</span><span class="stat__label">Kodekurrent Hackathon</span></div>
-        </div>
       </div>
     </section>
 
     <section class="section" id="projects">
-      <h2 class="section__title"><span class="px px--sm">§</span> Projects</h2>
+      <h2 class="section__title">Projects</h2>
       <div class="grid">
 
         <article class="card">
-          <div class="card__tag">AI · Full Stack</div>
-          <h3>DraftMate AI</h3>
+          <div class="card__head">
+            <h3>DraftMate AI</h3>
+            <span class="card__tag">AI · Full Stack</span>
+          </div>
           <p>
             Chat-first AI legal drafting studio. Describe a document by typing
             or speaking; the backend picks a drafting skill and opens a
-            customisable workspace. Citation verification via Indian Kanoon.
+            customisable workspace with citation verification via Indian Kanoon.
           </p>
           <ul class="card__stack">
-            <li>FastAPI</li><li>React</li><li>Gemini API</li><li>Docker</li><li>Render</li>
+            <li>FastAPI</li><li>React</li><li>Gemini API</li><li>Docker</li>
           </ul>
           <div class="card__links">
             <a href="#" target="_blank" rel="noopener">Live Demo</a>
@@ -92,11 +85,13 @@
         </article>
 
         <article class="card">
-          <div class="card__tag">Genetics · Web</div>
-          <h3>Inheritance Odds</h3>
+          <div class="card__head">
+            <h3>Inheritance Odds</h3>
+            <span class="card__tag">Genetics · Web</span>
+          </div>
           <p>
             Estimates the chance a child inherits 18 genetic traits using
-            Mendelian Punnett squares, plus a height-range estimator and Rh
+            Mendelian Punnett squares, with a height-range estimator and Rh
             incompatibility guidance.
           </p>
           <ul class="card__stack">
@@ -109,16 +104,17 @@
         </article>
 
         <article class="card card--featured">
-          <div class="card__tag">Structural Engineering · LaTeX</div>
-          <h3>OsdagBridge Report Refactor</h3>
+          <div class="card__head">
+            <h3>OsdagBridge Report Refactor</h3>
+            <span class="card__tag">Structural Eng. · LaTeX</span>
+          </div>
           <p>
             Refactored the LaTeX design-report generator for OsdagBridge:
-            centralized style system (<code>styles.py</code>), longtable header
-            repetition, split load tables, and matplotlib charts for material
-            quantities and utilization ratios.
+            centralized style system, longtable header repetition, split load
+            tables, and matplotlib charts for quantities and utilization ratios.
           </p>
           <ul class="card__stack">
-            <li>Python</li><li>LaTeX</li><li>PyLaTeX-style strings</li><li>matplotlib</li>
+            <li>Python</li><li>LaTeX</li><li>matplotlib</li>
           </ul>
           <div class="card__links">
             <a href="https://github.com/darshilnikam01-lgtm/OsdagBridge/pull/1" target="_blank" rel="noopener">Pull Request</a>
@@ -130,40 +126,40 @@
     </section>
 
     <section class="section" id="skills">
-      <h2 class="section__title"><span class="px px--sm">§</span> Skills</h2>
+      <h2 class="section__title">Skills</h2>
       <div class="skills">
         <div class="skill-group">
-          <h3>Languages</h3>
+          <h3>Programming</h3>
           <div class="chips">
             <span>Python</span><span>C++</span><span>C</span><span>JavaScript</span><span>MATLAB</span>
           </div>
         </div>
         <div class="skill-group">
-          <h3>Web</h3>
+          <h3>Web Development</h3>
           <div class="chips">
-            <span>React</span><span>FastAPI</span><span>Node.js</span><span>Django</span><span>Tailwind</span>
+            <span>React</span><span>FastAPI</span><span>Django</span><span>Node.js</span><span>Tailwind</span>
           </div>
         </div>
         <div class="skill-group">
-          <h3>ML & Data</h3>
+          <h3>Machine Learning</h3>
           <div class="chips">
             <span>NumPy</span><span>Pandas</span><span>Matplotlib</span><span>scikit-learn</span>
           </div>
         </div>
         <div class="skill-group">
-          <h3>Tools</h3>
+          <h3>Tools &amp; Platforms</h3>
           <div class="chips">
-            <span>Git</span><span>Docker</span><span>Render</span><span>LaTeX</span><span>VS Code</span>
+            <span>Git</span><span>Docker</span><span>Render</span><span>LaTeX</span><span>GitHub Pages</span>
           </div>
         </div>
       </div>
     </section>
 
     <section class="section" id="experience">
-      <h2 class="section__title">Experience & Awards</h2>
+      <h2 class="section__title">Experience &amp; Awards</h2>
       <ul class="timeline">
         <li>
-          <span class="timeline__date">Oct 2026</span>
+          <span class="timeline__date">2026</span>
           <div>
             <strong>Kodekurrent Season 2.0 Hackathon</strong> — 2nd runner-up (team of 4), built DraftMate AI.
           </div>
@@ -171,26 +167,32 @@
         <li>
           <span class="timeline__date">2024</span>
           <div>
-            <strong>IOQM + RMO Awardee</strong> — qualified for both math olympiads; NSEP/NSEA MAS; VVM State Camp '19.
+            <strong>RMO</strong> — qualified, Maharashtra region.
+          </div>
+        </li>
+        <li>
+          <span class="timeline__date">2022 – 2023</span>
+          <div>
+            <strong>IOQM</strong> — qualified both years. NSEP &amp; NSEA Minimum Admissible Score.
           </div>
         </li>
         <li>
           <span class="timeline__date">2019</span>
           <div>
-            <strong>VVM State Camp</strong> — one of 20 students selected statewide.
+            <strong>VVM State Math Camp</strong> — one of 20 students selected statewide.
           </div>
         </li>
         <li>
           <span class="timeline__date">Ongoing</span>
           <div>
-            <strong>Chess.com</strong> — rated 1564. <strong>Nobel Science Foundation</strong> scholarship awardee.
+            <strong>Chess.com</strong> — rated 1564. <strong>Nobel Science Foundation</strong> scholarship awardee. NCC B Certificate.
           </div>
         </li>
       </ul>
     </section>
 
     <section class="section" id="collaborations">
-      <h2 class="section__title"><span class="px px--sm">§</span> Collaborations</h2>
+      <h2 class="section__title">Collaborations</h2>
       <div class="collab">
         <p>
           Open to collaborations on open-source projects, hackathons, and
@@ -198,17 +200,15 @@
           <strong>OsdagBridge</strong> report generator (FOSSEE / IIT Bombay
           ecosystem).
         </p>
-        <a class="btn btn--primary" href="mailto:darshilnikam06@gmail.com?subject=Collaboration">Say hello</a>
+        <a class="btn" href="mailto:darshilnikam06@gmail.com?subject=Collaboration">Say hello</a>
       </div>
     </section>
 
     <section class="section section--contact" id="contact">
-      <h2 class="section__title"><span class="px px--sm">§</span> Contact</h2>
-      <p class="contact__text">
-        Best way to reach me is email — I reply fast.
-      </p>
+      <h2 class="section__title">Contact</h2>
+      <p class="contact__text">Best way to reach me is email — I reply fast.</p>
       <a class="contact__email" href="mailto:darshilnikam06@gmail.com">darshilnikam06@gmail.com</a>
-      <div class="hero__socials contact__socials">
+      <div class="hero__socials">
         <a href="https://github.com/darshilnikam01-lgtm" target="_blank" rel="noopener">GitHub</a>
         <a href="https://www.linkedin.com/in/darshil-nikam-b2b08432b/" target="_blank" rel="noopener">LinkedIn</a>
         <a href="https://codeforces.com/profile/BinaryNull" target="_blank" rel="noopener">Codeforces</a>
