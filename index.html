@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Darshil Nikam — Builder & Problem Solver</title>
+  <meta name="description" content="Darshil Nikam — B.Tech CSE student building AI tools, web apps, and structural engineering software." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <a class="nav__logo" href="#top">DN</a>
+    <div class="nav__links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="nav__toggle" aria-label="Toggle menu">☰</button>
+  </nav>
+
+  <header class="hero" id="top">
+    <p class="hero__greeting">Hi, I'm</p>
+    <h1 class="hero__name">Darshil Nikam</h1>
+    <h2 class="hero__role">
+      <span id="typed"></span><span class="caret">|</span>
+    </h2>
+    <p class="hero__sub">
+      B.Tech CSE student crafting AI-powered tools, web apps, and
+      structural-engineering software.
+    </p>
+    <div class="hero__cta">
+      <a class="btn btn--primary" href="#projects">View Projects</a>
+      <a class="btn btn--ghost" href="#contact">Get in Touch</a>
+    </div>
+    <div class="hero__socials">
+      <a href="https://github.com/darshilnikam01-lgtm" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+      <a href="https://linkedin.com/in/darshil-nikam" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+      <a href="mailto:darshilnikam06@gmail.com">Email</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="about">
+      <h2 class="section__title">About Me</h2>
+      <div class="about">
+        <p>
+          I'm a Computer Science undergrad passionate about competitive
+          programming, machine learning, and building things that solve real
+          problems. I like taking a messy problem — a legal document, a bridge
+          design report, a genetics question — and turning it into a clean,
+          working product.
+        </p>
+        <p>
+          Recently I contributed a full refactor of the LaTeX report generator
+          in OsdagBridge (FOSSEE/IIT Bombay ecosystem): centralized styling,
+          longtable migration, and programmatic charts — all verified by
+          diffing generated PDFs.
+        </p>
+        <div class="stats">
+          <div class="stat"><span class="stat__num">1200+</span><span class="stat__label">Codeforces rating</span></div>
+          <div class="stat"><span class="stat__num">IOQM</span><span class="stat__label">Qualified '22 & '23</span></div>
+          <div class="stat"><span class="stat__num">2nd</span><span class="stat__label">Kodekurrent Hackathon</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <h2 class="section__title">Projects</h2>
+      <div class="grid">
+
+        <article class="card">
+          <div class="card__tag">AI · Full Stack</div>
+          <h3>DraftMate AI</h3>
+          <p>
+            Chat-first AI legal drafting studio. Describe a document by typing
+            or speaking; the backend picks a drafting skill and opens a
+            customisable workspace. Citation verification via Indian Kanoon.
+          </p>
+          <ul class="card__stack">
+            <li>FastAPI</li><li>React</li><li>Gemini API</li><li>Docker</li><li>Render</li>
+          </ul>
+          <div class="card__links">
+            <a href="#" target="_blank" rel="noopener">Live Demo</a>
+            <a href="https://github.com/darshilnikam01-lgtm/DraftMateAi---NullPointer-" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__tag">Genetics · Web</div>
+          <h3>Inheritance Odds</h3>
+          <p>
+            Estimates the chance a child inherits 18 genetic traits using
+            Mendelian Punnett squares, plus a height-range estimator and Rh
+            incompatibility guidance.
+          </p>
+          <ul class="card__stack">
+            <li>Node.js</li><li>Express</li><li>GitHub Pages</li>
+          </ul>
+          <div class="card__links">
+            <a href="#" target="_blank" rel="noopener">Live Demo</a>
+            <a href="https://github.com/darshilnikam01-lgtm/inheritance-odds" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+
+        <article class="card card--featured">
+          <div class="card__tag">Structural Engineering · LaTeX</div>
+          <h3>OsdagBridge Report Refactor</h3>
+          <p>
+            Refactored the LaTeX design-report generator for OsdagBridge:
+            centralized style system (<code>styles.py</code>), longtable header
+            repetition, split load tables, and matplotlib charts for material
+            quantities and utilization ratios.
+          </p>
+          <ul class="card__stack">
+            <li>Python</li><li>LaTeX</li><li>PyLaTeX-style strings</li><li>matplotlib</li>
+          </ul>
+          <div class="card__links">
+            <a href="https://github.com/darshilnikam01-lgtm/OsdagBridge/pull/1" target="_blank" rel="noopener">Pull Request</a>
+            <a href="https://github.com/darshilnikam01-lgtm/OsdagBridge" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <h2 class="section__title">Skills</h2>
+      <div class="skills">
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <div class="chips">
+            <span>Python</span><span>C++</span><span>C</span><span>JavaScript</span><span>MATLAB</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Web</h3>
+          <div class="chips">
+            <span>React</span><span>FastAPI</span><span>Node.js</span><span>Django</span><span>Tailwind</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>ML & Data</h3>
+          <div class="chips">
+            <span>NumPy</span><span>Pandas</span><span>Matplotlib</span><span>scikit-learn</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Tools</h3>
+          <div class="chips">
+            <span>Git</span><span>Docker</span><span>Render</span><span>LaTeX</span><span>VS Code</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <h2 class="section__title">Experience & Awards</h2>
+      <ul class="timeline">
+        <li>
+          <span class="timeline__date">Oct 2026</span>
+          <div>
+            <strong>Kodekurrent Season 2.0 Hackathon</strong> — 2nd runner-up (team of 4), built DraftMate AI.
+          </div>
+        </li>
+        <li>
+          <span class="timeline__date">2024</span>
+          <div>
+            <strong>RMO Qualifier</strong> — Maharashtra region; IOQM qualified 2022 &amp; 2023; NSEP/NSEA MAS.
+          </div>
+        </li>
+        <li>
+          <span class="timeline__date">2019</span>
+          <div>
+            <strong>VVM State Camp</strong> — one of 20 students selected statewide.
+          </div>
+        </li>
+        <li>
+          <span class="timeline__date">Ongoing</span>
+          <div>
+            <strong>Chess.com</strong> — rated 1564. <strong>Nobel Science Foundation</strong> scholarship awardee.
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section" id="collaborations">
+      <h2 class="section__title">Collaborations</h2>
+      <div class="collab">
+        <p>
+          Open to collaborations on open-source projects, hackathons, and
+          ML/system builds. Currently contributing to the
+          <strong>OsdagBridge</strong> report generator (FOSSEE / IIT Bombay
+          ecosystem).
+        </p>
+        <a class="btn btn--primary" href="mailto:darshilnikam06@gmail.com?subject=Collaboration">Say hello</a>
+      </div>
+    </section>
+
+    <section class="section section--contact" id="contact">
+      <h2 class="section__title">Contact</h2>
+      <p class="contact__text">
+        Best way to reach me is email — I reply fast.
+      </p>
+      <a class="contact__email" href="mailto:darshilnikam06@gmail.com">darshilnikam06@gmail.com</a>
+      <div class="hero__socials contact__socials">
+        <a href="https://github.com/darshilnikam01-lgtm" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/darshil-nikam" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Darshil Nikam · Built with plain HTML, CSS &amp; JS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
